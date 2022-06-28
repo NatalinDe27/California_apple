@@ -5,6 +5,12 @@
     @content;
   }
 }
+title {
+  &:before {
+content: "\f179";
+  }
+
+}
 .container {
   max-width: 1294px;
 }
@@ -33,6 +39,11 @@ form {
   .container {
     background-color: #DCE5E2;
     border-radius: 32px;
+    .row {
+      .col-lg-6 {
+        align-content: center;
+      }
+    }
 
   }
 }

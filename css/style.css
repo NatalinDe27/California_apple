@@ -1,4 +1,8 @@
 @import "bootstrap.css";
+title:before {
+  content: "\f179";
+}
+
 .container {
   max-width: 1294px;
 }
@@ -21,6 +25,9 @@ form a:after {
 .main_section .container {
   background-color: #DCE5E2;
   border-radius: 32px;
+}
+.main_section .container .row .col-lg-6 {
+  align-content: center;
 }
 
 .main_section.position-relative {
