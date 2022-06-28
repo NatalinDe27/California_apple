@@ -1,0 +1,83 @@
+@import "bootstrap.css";
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+.container {
+  max-width: 1294px;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+
+}
+form {
+  .input {
+    &:after{
+      content: '\f002';
+    }
+  }
+  a {
+    &:after {
+      content: '\f07a';
+    }
+  }
+}
+
+.main_section {
+  height: 100vh;
+
+  .container {
+    background-color: #DCE5E2;
+    border-radius: 32px;
+
+  }
+}
+.main_section  {
+  &.position-relative {
+    top: 108px;
+  }}
+
+
+
+//.owl-dots .owl-dot {
+//  border-radius: 50%;
+//  background-color: white !important;
+//  width: 10px;
+//  height: 10px;
+//  margin: 10px;
+//
+//}
+
+//button.owl-dot.active {
+//  position: relative;
+//  width: 16px;
+//  height: 16px;
+//}
+//
+//.owl-stage {
+//  display: flex;
+//}
+//
+//.owl-carousel.owl-drag .owl-item {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
+
+
+.email {
+  text-align: center;
+  .container {
+max-width: 935px;
+    background-color: #DCE5E2;
+    border-radius: 16px;
+    form {
+      justify-content: center;
+    }
+
+  }
+}
