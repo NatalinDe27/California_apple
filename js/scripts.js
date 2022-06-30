@@ -16,4 +16,8 @@ $(document).ready(function(){
             }
         }
     });
+    let button = document.getElementById('what-lorem-ipsum-header');
+    button.onclick = function(){
+        this.nextElementSibling.style.display =  this.nextElementSibling.style.display == 'none' ? 'block' : 'none' ;
+    }
 });

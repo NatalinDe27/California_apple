@@ -1,26 +1,25 @@
 @import "bootstrap.css";
-title:before {
-  content: "\f179";
-}
-
 .container {
   max-width: 1294px;
 }
 
-header {
-  position: absolute;
-  z-index: 1;
-}
-
-form .input:after {
-  content: "\f002";
-}
-form a:after {
+header form a:after {
   content: "\f07a";
+  width: 10px;
+  height: 10px;
+  font-size: 25px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+header form .form-control {
+  display: none;
 }
 
 .main_section {
   height: 100vh;
+}
+.main_section.position-relative {
+  top: 28px;
 }
 .main_section .container {
   background-color: #DCE5E2;
@@ -29,9 +28,99 @@ form a:after {
 .main_section .container .row .col-lg-6 {
   align-content: center;
 }
+.main_section h1 {
+  max-width: 588px;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 70px;
+  color: #000000;
+}
 
-.main_section.position-relative {
-  top: 108px;
+.owl-nav {
+  position: absolute;
+  top: 263px;
+}
+.owl-nav .owl-prev:before {
+  content: "\f104";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 1232px;
+  height: 24px;
+  width: 12px;
+}
+.owl-nav .owl-next:before {
+  content: "\f105";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  height: 24px;
+  width: 12px;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 34px;
+  left: 322px;
+}
+.owl-dots .owl-dot {
+  width: 194px;
+  height: 2px;
+  margin-right: 34px;
+  background: #000000 !important;
+  border-radius: 0;
+}
+.owl-dots .owl-dot.active {
+  width: 194px;
+  height: 3px;
+  border: solid 1px blue;
+}
+
+.latest_offers .container p {
+  max-width: 628px;
+}
+
+.search form {
+  position: relative;
+  z-index: 15;
+}
+.search form input {
+  width: 650px;
+  height: 60px;
+  background: #F8F9FA;
+  border: 1px solid #C5C5C5;
+  border-radius: 100px;
+  padding-left: 67px;
+}
+.search form button:before {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  left: 25px;
+  top: 50%;
+  content: "\f002";
+  width: 10px;
+  height: 10px;
+  font-size: 25px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+}
+.search ul {
+  list-style: none;
+  max-width: 630px;
+}
+.search ul li {
+  background: #FFFFFF;
+  border: 1px solid #C5C5C5;
+  border-radius: 200px;
+  text-decoration: none;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  padding: 12px 22px 13px;
+}
+.search ul li a {
+  display: inline-block;
 }
 
 .email {
