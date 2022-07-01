@@ -6,20 +6,76 @@
   }
 }
 
+$font_inter: 'Inter';
+$font_readex_pro: 'Readex Pro';
+$main_color: #000000;
+
+
 .container {
   max-width: 1294px;
 }
 
 header {
+  .container {
+    padding: 0;
+  .navbar {
+padding-left: 0;
+  .navbar-brand {
+    margin-right: 285px;
+
+  }
+  .collapse {
+    .nav-item {
+      &:nth-of-type(1) {
+        padding-right: 33px;
+      }
+      &:nth-of-type(2) {
+         padding-right: 34px;
+       }
+      &:nth-of-type(3) {
+        padding-right: 44px;
+      }
+      a {
+        font-family: $font_inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $main_color;
+      }
+    }
+      .dropdown-toggle {
+        &:after {
+          content: '\f107';
+          color: black;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 600;
+          border: none;
+          vertical-align: 0;
+        }
+    }
+  }
   form {
+    button {
+
+      &#what-lorem-ipsum-header {
+        border: none;
+        background-color: transparent;
+
+      }
+    }
     a {
+      margin-left: 22px;
+      &:hover {
+        text-decoration: none;
+      }
       &:after {
         content: '\f07a';
-        width: 10px;
-        height: 10px;
-        font-size: 25px;
+        color: black;
+        font-size: 22px;
         font-family: "Font Awesome 5 Free";
         font-weight: 600;
+
+
       }
     }
   .form-control {
@@ -27,9 +83,15 @@ display: none;
     }
   }
 }
+}
+}
+
+
+
 
 .main_section  {
   height: 100vh;
+
   &.position-relative {
     top: 28px;
   }
@@ -38,25 +100,36 @@ display: none;
     border-radius: 32px;
     .row {
       .col-lg-6 {
-        align-content: center;
+        &.align-items-center {
+          align-content: center;
+          padding-left: 56px;
+
+        }
+
       }
     }
   }
   h1 {
     max-width: 588px;
-    font-family: 'Readex Pro';
-    font-style: normal;
+    font-family: $font_readex_pro;
     font-weight: 400;
     font-size: 58px;
     line-height: 70px;
-    color: #000000;
-
+    color: $main_color;
+  }
+  p {
+    font-family: $font_inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main_color;
   }
 }
 
 .owl-nav  {
   position: absolute;
   top: 263px;
+  left: 19px;
   .owl-prev {
     &:before {
       content: "\f104";
@@ -65,6 +138,8 @@ display: none;
       margin-right: 1232px;
       height: 24px;
       width: 12px;
+      font-size: 1.25em;
+      line-height: .05em;
     }
   }
   .owl-next {
@@ -74,6 +149,8 @@ display: none;
       font-weight: 600;
       height: 24px;
       width: 12px;
+      font-size: 1.25em;
+      line-height: .05em;
     }
   }
 }

@@ -3,15 +3,57 @@
   max-width: 1294px;
 }
 
-header form a:after {
+header .container {
+  padding: 0;
+}
+header .container .navbar {
+  padding-left: 0;
+}
+header .container .navbar .navbar-brand {
+  margin-right: 285px;
+}
+header .container .navbar .collapse .nav-item:nth-of-type(1) {
+  padding-right: 33px;
+}
+header .container .navbar .collapse .nav-item:nth-of-type(2) {
+  padding-right: 34px;
+}
+header .container .navbar .collapse .nav-item:nth-of-type(3) {
+  padding-right: 44px;
+}
+header .container .navbar .collapse .nav-item a {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+header .container .navbar .collapse .dropdown-toggle:after {
+  content: "\f107";
+  color: black;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  border: none;
+  vertical-align: 0;
+}
+header .container .navbar form button#what-lorem-ipsum-header {
+  border: none;
+  background-color: transparent;
+}
+header .container .navbar form a {
+  margin-left: 22px;
+}
+header .container .navbar form a:hover {
+  text-decoration: none;
+}
+header .container .navbar form a:after {
   content: "\f07a";
-  width: 10px;
-  height: 10px;
-  font-size: 25px;
+  color: black;
+  font-size: 22px;
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
 }
-header form .form-control {
+header .container .navbar form .form-control {
   display: none;
 }
 
@@ -25,22 +67,30 @@ header form .form-control {
   background-color: #DCE5E2;
   border-radius: 32px;
 }
-.main_section .container .row .col-lg-6 {
+.main_section .container .row .col-lg-6.align-items-center {
   align-content: center;
+  padding-left: 56px;
 }
 .main_section h1 {
   max-width: 588px;
   font-family: "Readex Pro";
-  font-style: normal;
   font-weight: 400;
   font-size: 58px;
   line-height: 70px;
+  color: #000000;
+}
+.main_section p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   color: #000000;
 }
 
 .owl-nav {
   position: absolute;
   top: 263px;
+  left: 19px;
 }
 .owl-nav .owl-prev:before {
   content: "\f104";
@@ -49,6 +99,8 @@ header form .form-control {
   margin-right: 1232px;
   height: 24px;
   width: 12px;
+  font-size: 1.25em;
+  line-height: 0.05em;
 }
 .owl-nav .owl-next:before {
   content: "\f105";
@@ -56,6 +108,8 @@ header form .form-control {
   font-weight: 600;
   height: 24px;
   width: 12px;
+  font-size: 1.25em;
+  line-height: 0.05em;
 }
 
 .owl-dots {
