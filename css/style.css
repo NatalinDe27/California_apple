@@ -383,9 +383,13 @@ header .container .navbar form .form-control {
   font-size: 25px;
 }
 
+.search {
+  margin-bottom: 68px;
+}
 .search form {
+  margin-bottom: 18px;
   position: relative;
-  z-index: 15;
+  z-index: 0;
 }
 .search form input {
   width: 650px;
@@ -395,16 +399,24 @@ header .container .navbar form .form-control {
   border-radius: 100px;
   padding-left: 67px;
 }
-.search form button:before {
+.search form input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.search form button {
   position: absolute;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  left: 25px;
-  top: 50%;
+  z-index: 1;
+  background-color: transparent;
+  top: 9px;
+  left: 325px;
+  border: none;
+}
+.search form button:before {
   content: "\f002";
-  width: 10px;
-  height: 10px;
   font-size: 25px;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
@@ -424,6 +436,12 @@ header .container .navbar form .form-control {
 }
 .search ul li a {
   display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 
 .email {
