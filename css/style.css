@@ -3,6 +3,39 @@
   max-width: 1294px;
 }
 
+h2 {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  color: #000000;
+}
+
+h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+
+h4 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  color: #000000;
+}
+
+h5 {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+}
+
 header .container {
   padding: 0;
 }
@@ -10,19 +43,19 @@ header .container .navbar {
   padding-left: 0;
 }
 header .container .navbar .navbar-brand {
-  margin-right: 285px;
+  margin-right: 277px;
 }
 header .container .navbar .collapse .nav-item:nth-of-type(1) {
-  padding-right: 33px;
+  padding-right: 17px;
 }
 header .container .navbar .collapse .nav-item:nth-of-type(2) {
-  padding-right: 34px;
+  padding-right: 18px;
 }
 header .container .navbar .collapse .nav-item:nth-of-type(3) {
-  padding-right: 44px;
+  padding-right: 28px;
 }
 header .container .navbar .collapse .nav-item a {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -61,7 +94,7 @@ header .container .navbar form .form-control {
   height: 100vh;
 }
 .main_section.position-relative {
-  top: 28px;
+  top: 20px;
 }
 .main_section .container {
   background-color: #DCE5E2;
@@ -71,20 +104,39 @@ header .container .navbar form .form-control {
   align-content: center;
   padding-left: 56px;
 }
+.main_section .container .row .col-lg-6.align-items-center button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding: 14px 53px;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  background-color: transparent;
+}
+.main_section .container .row .col-lg-6.align-items-center button:hover {
+  border: 1px solid blue;
+}
+.main_section .container .row .col-lg-6.align-items-center button:active {
+  background-color: #fff;
+}
 .main_section h1 {
   max-width: 588px;
-  font-family: "Readex Pro";
+  font-family: "Readex Pro", sans-serif;
   font-weight: 400;
   font-size: 58px;
   line-height: 70px;
   color: #000000;
+  padding-bottom: 11px;
 }
 .main_section p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  margin-bottom: 30px;
 }
 
 .owl-nav {
@@ -96,7 +148,7 @@ header .container .navbar form .form-control {
   content: "\f104";
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
-  margin-right: 1232px;
+  margin-right: 616px;
   height: 24px;
   width: 12px;
   font-size: 1.25em;
@@ -110,6 +162,7 @@ header .container .navbar form .form-control {
   width: 12px;
   font-size: 1.25em;
   line-height: 0.05em;
+  margin-left: 616px;
 }
 
 .owl-dots {
