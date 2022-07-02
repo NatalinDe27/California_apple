@@ -334,6 +334,59 @@ header {
 }
 
 
+.top_items {
+  margin-bottom: 47px;
+  .container {
+    padding: 0;
+  }
+  p {
+  &.text-center {
+    margin-bottom: 31px;
+    font-family: $font_readex_pro;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: $main_color;
+
+  }}
+  .card-deck {
+    margin: 0;
+    .card {
+      margin: 0 28px 0 0;
+      padding: 0;
+      border: none;
+      &:last-of-type {
+        margin: 0;
+      }
+      .card-img-top {
+        margin: 28px;
+        max-width: 247px;
+
+      }
+      .card-body {
+        padding: 0;
+        .text-muted {
+          font-family: $font_inter;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #4B4B4B;
+        }
+        .card-text {
+          font-family: $font_inter;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #4B4B4B;
+      }
+
+      }
+    }
+  }
+}
+
+
+
 .search {
   form {
     position: relative;

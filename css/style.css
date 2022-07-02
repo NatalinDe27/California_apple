@@ -235,6 +235,53 @@ header .container .navbar form .form-control {
   margin-bottom: 42px;
 }
 
+.top_items {
+  margin-bottom: 47px;
+}
+.top_items .container {
+  padding: 0;
+}
+.top_items p.text-center {
+  margin-bottom: 31px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+}
+.top_items .card-deck {
+  margin: 0;
+}
+.top_items .card-deck .card {
+  margin: 0 28px 0 0;
+  padding: 0;
+  border: none;
+}
+.top_items .card-deck .card:last-of-type {
+  margin: 0;
+}
+.top_items .card-deck .card .card-img-top {
+  margin: 28px;
+  max-width: 247px;
+}
+.top_items .card-deck .card .card-body {
+  padding: 0;
+}
+.top_items .card-deck .card .card-body .text-muted {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4B4B4B;
+}
+.top_items .card-deck .card .card-body .card-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4B4B4B;
+}
+
 .search form {
   position: relative;
   z-index: 15;
