@@ -445,15 +445,61 @@ header .container .navbar form .form-control {
 }
 
 .email {
-  text-align: center;
+  margin-bottom: 19px;
 }
 .email .container {
   max-width: 935px;
   background-color: #DCE5E2;
   border-radius: 16px;
 }
+.email .container h2 {
+  padding-top: 47px;
+}
+.email .container p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.email .container .size_img {
+  max-width: 233px;
+}
 .email .container form {
+  margin-top: 14px;
   justify-content: center;
+  padding-bottom: 43px;
+}
+.email .container form .form-group {
+  max-width: 400px;
+}
+.email .container form input {
+  border: 1px solid #000000;
+  border-radius: 54px 0px 0px 54px;
+}
+.email .container form input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.email .container form button {
+  background-color: #000000;
+  border-radius: 0px 200px 200px 0px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  padding: 16px 33px 17px 32px;
+}
+
+footer {
+  background-color: #F8F9FA;
 }
 
 /*# sourceMappingURL=style.css.map */

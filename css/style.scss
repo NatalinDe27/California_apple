@@ -566,16 +566,69 @@ max-width: 294px;
 }
 
 .email {
-  text-align: center;
-
+  margin-bottom: 19px;
   .container {
     max-width: 935px;
     background-color: #DCE5E2;
     border-radius: 16px;
+h2 {
+  padding-top: 47px;
+}
+    p {
+      font-family: $font_inter;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $main_color;
 
-    form {
-      justify-content: center;
     }
+    .size_img {
+      max-width: 233px;
+
+    }
+    form {
+      margin-top: 14px;
+      justify-content: center;
+      padding-bottom: 43px;
+      .form-group {
+        max-width: 400px;
+      }
+      input {
+        border: 1px solid #000000;
+        border-radius: 54px 0px 0px 54px;
+
+        &.form-control {
+
+        }
+        &::placeholder {
+          font-family: $font_inter;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: $main_color;
+
+        }
+      }
+      button {
+        background-color: $main_color;
+        border-radius: 0px 200px 200px 0px;
+        border: none;
+        font-family: $font_inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: white;
+        padding: 16px 33px 17px 32px;
+
+
+      }
+    }
+
   }
 }
 
+footer {
+  background-color: #F8F9FA;
+}
