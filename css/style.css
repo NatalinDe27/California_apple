@@ -91,10 +91,8 @@ header .container .navbar form .form-control {
 }
 
 .main_section {
-  height: 100vh;
-}
-.main_section.position-relative {
-  top: 20px;
+  margin-bottom: 75px;
+  margin-top: 20px;
 }
 .main_section .container {
   background-color: #DCE5E2;
@@ -138,13 +136,12 @@ header .container .navbar form .form-control {
   color: #000000;
   margin-bottom: 30px;
 }
-
-.owl-nav {
+.main_section .owl-carousel .owl-nav {
   position: absolute;
   top: 263px;
   left: 19px;
 }
-.owl-nav .owl-prev:before {
+.main_section .owl-carousel .owl-nav .owl-prev:before {
   content: "\f104";
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
@@ -154,7 +151,7 @@ header .container .navbar form .form-control {
   font-size: 1.25em;
   line-height: 0.05em;
 }
-.owl-nav .owl-next:before {
+.main_section .owl-carousel .owl-nav .owl-next:before {
   content: "\f105";
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
@@ -164,27 +161,78 @@ header .container .navbar form .form-control {
   line-height: 0.05em;
   margin-left: 616px;
 }
-
-.owl-dots {
+.main_section .owl-carousel .owl-dots {
   position: absolute;
   bottom: 34px;
   left: 322px;
 }
-.owl-dots .owl-dot {
+.main_section .owl-carousel .owl-dots .owl-dot {
   width: 194px;
   height: 2px;
   margin-right: 34px;
   background: #000000 !important;
   border-radius: 0;
 }
-.owl-dots .owl-dot.active {
+.main_section .owl-carousel .owl-dots .owl-dot.active {
   width: 194px;
   height: 3px;
   border: solid 1px blue;
 }
 
-.latest_offers .container p {
+.latest_offers {
+  margin-bottom: 100px;
+  margin-left: 0;
+}
+.latest_offers .container .indent_bottom {
+  margin-bottom: 55px;
+}
+.latest_offers .container .indent_bottom .m-auto p {
   max-width: 628px;
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.latest_offers .container .col-lg-6 .shadow.bg-white.rounded {
+  padding: 0 42px 0;
+}
+.latest_offers .container .col-lg-6 .shadow.bg-white.rounded.watch_indent {
+  margin-bottom: -22px;
+}
+.latest_offers .container .col-lg-3 {
+  max-width: 312px;
+}
+.latest_offers .container .col-lg-3 .shadow.bg-white.rounded {
+  padding: 0;
+}
+.latest_offers .container .row .shadow.bg-white.rounded p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000000;
+}
+.latest_offers .container .row .shadow.bg-white.rounded.d-flex h3 span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000000;
+}
+.latest_offers .container .row .shadow.bg-white.rounded .d-block.phones_img {
+  margin-bottom: 41px;
+}
+.latest_offers .container .row .shadow.bg-white.tablet {
+  margin-bottom: 0;
+  padding: 0;
+}
+.latest_offers .container .row .shadow.bg-white p {
+  font-size: 16px;
+}
+.latest_offers .container .row .shadow.bg-white h3 {
+  margin-bottom: 42px;
 }
 
 .search form {
