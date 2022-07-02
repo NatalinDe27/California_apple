@@ -452,8 +452,54 @@ max-width: 294px;
   }}
 
 
+.ideas {
+  margin-bottom: 75px;
+  .container {
+    padding: 0;
+    p {
+      &.text-center {
+        margin-bottom: 56px;
+        font-family: $font_readex_pro;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #000000;
+      }
 
+      &.pb_4 {
+        padding-bottom: 12px;
+        font-family: $font_inter;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: $main_color;
+        max-width: 600px;
 
+      }
+    }
+    .col-12 {
+      &.col-lg-6 {
+        max-width: 620px;
+        margin-right: 20px;
+        margin-bottom: 73px;
+      }
+    }
+    a{
+      font-family: $font_inter;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: $main_color;
+      transition: 0.3s;
+      &:hover {
+        text-decoration: none;
+        font-size: 25px;
+      }
+    }
+  }
+  }
 
 .search {
   form {
