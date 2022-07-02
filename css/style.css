@@ -477,6 +477,8 @@ header .container .navbar form .form-control {
 .email .container form input {
   border: 1px solid #000000;
   border-radius: 54px 0px 0px 54px;
+  height: 50px;
+  padding-right: 80px;
 }
 .email .container form input::placeholder {
   font-family: "Inter", sans-serif;
@@ -499,7 +501,47 @@ header .container .navbar form .form-control {
 }
 
 footer {
+  padding-top: 44px;
   background-color: #F8F9FA;
+}
+footer p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+footer .row.border_b {
+  border-bottom: solid #DCE5E2 2px;
+  margin-bottom: 52px;
+  padding-bottom: 64px;
+}
+footer .row.border_b p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  max-width: 304px;
+}
+footer .row.border_b h5 {
+  padding-bottom: 19px;
+}
+footer .row.border_b ul {
+  padding-left: 0;
+}
+footer .row.border_b ul li {
+  list-style: none;
+  padding-bottom: 14px;
+}
+footer .row.border_b ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

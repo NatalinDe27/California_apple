@@ -245,9 +245,11 @@ header {
 .latest_offers {
   margin-bottom: 100px;
   margin-left: 0;
+
   .container {
     .indent_bottom {
       margin-bottom: 55px;
+
       .m-auto {
         p {
           max-width: 628px;
@@ -261,11 +263,13 @@ header {
         }
       }
     }
+
     .col-lg-6 {
       .shadow {
         &.bg-white {
           &.rounded {
             padding: 0 42px 0;
+
             &.watch_indent {
               margin-bottom: -22px;
             }
@@ -274,8 +278,10 @@ header {
         }
       }
     }
+
     .col-lg-3 {
       max-width: 312px;
+
       .shadow {
         &.bg-white {
           &.rounded {
@@ -284,6 +290,7 @@ header {
         }
       }
     }
+
     .row {
       .shadow {
         &.bg-white {
@@ -307,12 +314,14 @@ header {
                 }
               }
             }
+
             .d-block {
               &.phones_img {
                 margin-bottom: 41px;
               }
             }
           }
+
           &.tablet {
 
             margin-bottom: 0;
@@ -336,34 +345,43 @@ header {
 
 .top_items {
   margin-bottom: 47px;
+
   .container {
     padding: 0;
   }
+
   p {
-  &.text-center {
-    margin-bottom: 31px;
-    font-family: $font_readex_pro;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
-    color: $main_color;
-  }}
+    &.text-center {
+      margin-bottom: 31px;
+      font-family: $font_readex_pro;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      color: $main_color;
+    }
+  }
+
   .card-deck {
     margin: 0;
+
     .card {
       margin: 0 28px 0 0;
       padding: 0;
       border: none;
+
       &:last-of-type {
         margin: 0;
       }
+
       .card-img-top {
         margin: 28px;
         max-width: 247px;
 
       }
+
       .card-body {
         padding: 0;
+
         .text-muted {
           font-family: $font_inter;
           font-weight: 400;
@@ -371,13 +389,14 @@ header {
           line-height: 17px;
           color: #4B4B4B;
         }
+
         .card-text {
           font-family: $font_inter;
           font-weight: 400;
           font-size: 14px;
           line-height: 17px;
           color: #4B4B4B;
-      }
+        }
 
       }
     }
@@ -386,6 +405,7 @@ header {
 
 .best_selling {
   margin-bottom: 75px;
+
   .container {
     padding: 0;
 
@@ -410,14 +430,18 @@ header {
         .mw_1 {
           max-width: 259px;
         }
+
         .mw_2 {
-max-width: 294px;
+          max-width: 294px;
         }
+
         .mw_2 {
           max-width: 355px;
         }
+
         .card-body {
           padding: 0;
+
           .card-text {
             font-family: $font_readex_pro;
             font-style: normal;
@@ -425,12 +449,14 @@ max-width: 294px;
             font-size: 13px;
             line-height: 17px;
             text-align: center;
-            color:$main_color;
+            color: $main_color;
             margin-bottom: 0;
           }
+
           .card-title {
             margin-bottom: 44px;
           }
+
           a {
             padding: 14px 63px;
             border: 1px solid #000000;
@@ -449,13 +475,16 @@ max-width: 294px;
       }
 
     }
-  }}
+  }
+}
 
 
 .ideas {
   margin-bottom: 75px;
+
   .container {
     padding: 0;
+
     p {
       &.text-center {
         margin-bottom: 56px;
@@ -478,6 +507,7 @@ max-width: 294px;
 
       }
     }
+
     .col-12 {
       &.col-lg-6 {
         max-width: 620px;
@@ -485,7 +515,8 @@ max-width: 294px;
         margin-bottom: 73px;
       }
     }
-    a{
+
+    a {
       font-family: $font_inter;
       font-style: normal;
       font-weight: 400;
@@ -493,20 +524,23 @@ max-width: 294px;
       line-height: 29px;
       color: $main_color;
       transition: 0.3s;
+
       &:hover {
         text-decoration: none;
         font-size: 25px;
       }
     }
   }
-  }
+}
 
 .search {
   margin-bottom: 68px;
+
   form {
     margin-bottom: 18px;
     position: relative;
     z-index: 0;
+
     input {
       width: 650px;
       height: 60px;
@@ -514,6 +548,7 @@ max-width: 294px;
       border: 1px solid #C5C5C5;
       border-radius: 100px;
       padding-left: 67px;
+
       &::placeholder {
         font-family: $font_inter;
         font-style: normal;
@@ -523,12 +558,13 @@ max-width: 294px;
         color: $main_color;
       }
     }
+
     button {
       position: absolute;
       z-index: 1;
       background-color: transparent;
       top: 9px;
-     left: 325px;
+      left: 325px;
       border: none;
 
       &:before {
@@ -539,6 +575,7 @@ max-width: 294px;
       }
     }
   }
+
   ul {
     list-style: none;
     max-width: 630px;
@@ -567,13 +604,16 @@ max-width: 294px;
 
 .email {
   margin-bottom: 19px;
+
   .container {
     max-width: 935px;
     background-color: #DCE5E2;
     border-radius: 16px;
-h2 {
-  padding-top: 47px;
-}
+
+    h2 {
+      padding-top: 47px;
+    }
+
     p {
       font-family: $font_inter;
       font-style: normal;
@@ -583,24 +623,31 @@ h2 {
       color: $main_color;
 
     }
+
     .size_img {
       max-width: 233px;
 
     }
+
     form {
       margin-top: 14px;
       justify-content: center;
       padding-bottom: 43px;
+
       .form-group {
         max-width: 400px;
       }
+
       input {
         border: 1px solid #000000;
         border-radius: 54px 0px 0px 54px;
+        height: 50px;
+        padding-right: 80px;
 
         &.form-control {
 
         }
+
         &::placeholder {
           font-family: $font_inter;
           font-style: normal;
@@ -611,6 +658,7 @@ h2 {
 
         }
       }
+
       button {
         background-color: $main_color;
         border-radius: 0px 200px 200px 0px;
@@ -630,5 +678,57 @@ h2 {
 }
 
 footer {
+  padding-top: 44px;
   background-color: #F8F9FA;
+
+  p {
+    font-family: $font_inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main_color;
+  }
+
+  .row {
+    &.border_b {
+      border-bottom: solid #DCE5E2 2px;
+      margin-bottom: 52px;
+      padding-bottom: 64px;
+
+      p {
+        font-family: $font_inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $main_color;
+        max-width: 304px;
+
+      }
+
+      h5 {
+        padding-bottom: 19px;
+      }
+
+      ul {
+        padding-left: 0;
+
+        li {
+          list-style: none;
+          padding-bottom: 14px;
+
+          a {
+
+            font-family: $font_inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            color: $main_color;
+
+          }
+        }
+      }
+    }
+  }
 }
