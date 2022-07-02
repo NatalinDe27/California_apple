@@ -159,7 +159,7 @@ header {
             }
 
             &:active {
-              background-color: #fff;
+              background-color: lightgrey;
             }
           }
         }
@@ -347,7 +347,6 @@ header {
     font-size: 13px;
     line-height: 17px;
     color: $main_color;
-
   }}
   .card-deck {
     margin: 0;
@@ -384,6 +383,75 @@ header {
     }
   }
 }
+
+.best_selling {
+  margin-bottom: 75px;
+  .container {
+    padding: 0;
+
+    p {
+      &.text-center {
+        margin-bottom: 56px;
+        font-family: $font_readex_pro;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: $main_color;
+      }
+    }
+
+    .card-deck {
+      .card {
+        border: none;
+        background-color: #F8F9FA;
+        border-radius: 16px;
+        padding-top: 41px;
+
+        .mw_1 {
+          max-width: 259px;
+        }
+        .mw_2 {
+max-width: 294px;
+        }
+        .mw_2 {
+          max-width: 355px;
+        }
+        .card-body {
+          padding: 0;
+          .card-text {
+            font-family: $font_readex_pro;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 17px;
+            text-align: center;
+            color:$main_color;
+            margin-bottom: 0;
+          }
+          .card-title {
+            margin-bottom: 44px;
+          }
+          a {
+            padding: 14px 63px;
+            border: 1px solid #000000;
+            border-radius: 200px;
+            font-family: $font_inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $main_color;
+            margin-bottom: 30px;
+
+          }
+        }
+
+      }
+
+    }
+  }}
+
+
 
 
 

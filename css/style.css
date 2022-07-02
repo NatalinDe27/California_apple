@@ -117,7 +117,7 @@ header .container .navbar form .form-control {
   border: 1px solid blue;
 }
 .main_section .container .row .col-lg-6.align-items-center button:active {
-  background-color: #fff;
+  background-color: lightgrey;
 }
 .main_section h1 {
   max-width: 588px;
@@ -280,6 +280,64 @@ header .container .navbar form .form-control {
   font-size: 14px;
   line-height: 17px;
   color: #4B4B4B;
+}
+
+.best_selling {
+  margin-bottom: 75px;
+}
+.best_selling .container {
+  padding: 0;
+}
+.best_selling .container p.text-center {
+  margin-bottom: 56px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+}
+.best_selling .container .card-deck .card {
+  border: none;
+  background-color: #F8F9FA;
+  border-radius: 16px;
+  padding-top: 41px;
+}
+.best_selling .container .card-deck .card .mw_1 {
+  max-width: 259px;
+}
+.best_selling .container .card-deck .card .mw_2 {
+  max-width: 294px;
+}
+.best_selling .container .card-deck .card .mw_2 {
+  max-width: 355px;
+}
+.best_selling .container .card-deck .card .card-body {
+  padding: 0;
+}
+.best_selling .container .card-deck .card .card-body .card-text {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 0;
+}
+.best_selling .container .card-deck .card .card-body .card-title {
+  margin-bottom: 44px;
+}
+.best_selling .container .card-deck .card .card-body a {
+  padding: 14px 63px;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 30px;
 }
 
 .search form {
