@@ -36,14 +36,11 @@ h5 {
   color: #000000;
 }
 
-header .container {
+header .container-xl {
   padding: 0;
 }
 header .container .navbar {
   padding-left: 0;
-}
-header .container .navbar .navbar-brand {
-  margin-right: 277px;
 }
 header .container .navbar .collapse .nav-item:nth-of-type(1) {
   padding-right: 17px;
@@ -238,7 +235,7 @@ header .container .navbar form .form-control {
 .top_items {
   margin-bottom: 47px;
 }
-.top_items .container {
+.top_items .container-xl {
   padding: 0;
 }
 .top_items p.text-center {
@@ -285,7 +282,7 @@ header .container .navbar form .form-control {
 .best_selling {
   margin-bottom: 75px;
 }
-.best_selling .container {
+.best_selling .container-lg {
   padding: 0;
 }
 .best_selling .container p.text-center {
@@ -343,13 +340,12 @@ header .container .navbar form .form-control {
 .ideas {
   margin-bottom: 75px;
 }
-.ideas .container {
+.ideas .container-xl {
   padding: 0;
 }
 .ideas .container p.text-center {
   margin-bottom: 56px;
   font-family: "Readex Pro", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 17px;
@@ -371,7 +367,6 @@ header .container .navbar form .form-control {
 }
 .ideas .container a {
   font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
