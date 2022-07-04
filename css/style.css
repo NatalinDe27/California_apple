@@ -273,7 +273,7 @@ header .container .navbar form .form-control {
 }
 
 .top_items {
-  margin-bottom: 47px;
+  margin-bottom: 74px;
 }
 .top_items .container-xl {
   padding: 0;
@@ -290,16 +290,24 @@ header .container .navbar form .form-control {
   margin: 0;
 }
 .top_items .card-deck .card {
-  margin: 0 28px 0 0;
+  margin: 0 74px 0 0;
   padding: 0;
   border: none;
 }
 .top_items .card-deck .card:last-of-type {
   margin: 0;
 }
-.top_items .card-deck .card .card-img-top {
-  margin: 28px;
-  max-width: 247px;
+@media (min-width: 1200px) {
+  .top_items .card-deck .card .card-img-top {
+    margin: 28px 28px 37px 28px;
+    max-width: 247px;
+  }
+}
+@media (max-width: 1199px) {
+  .top_items .card-deck .card .card-img-top {
+    margin: 8px 9px 8px 8px;
+    max-width: 247px;
+  }
 }
 .top_items .card-deck .card .card-body {
   padding: 0;
