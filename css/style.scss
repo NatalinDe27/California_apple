@@ -137,7 +137,7 @@ header {
   .container {
     background-color: #DCE5E2;
     border-radius: 32px;
-
+    padding-left: 0;
     .row {
       .col-lg-6 {
         &.align-items-center {
@@ -173,10 +173,32 @@ header {
     font-family: $font_readex_pro;
     font-weight: 400;
     font-size: 58px;
-    line-height: 70px;
+    line-height: 120%;
     color: $main_color;
     padding-bottom: 11px;
   }
+
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 45px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 575px) {
+    h1 {
+      font-size: 35px;
+    }
+  }
+
 
   p {
     font-family: $font_inter;
@@ -190,15 +212,19 @@ header {
   .owl-carousel {
     .owl-nav {
       position: absolute;
-      top: 263px;
-      left: 19px;
+      top: 47%;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 18px;
+      padding-right: 18px;
 
       .owl-prev {
         &:before {
           content: "\f104";
           font-family: "Font Awesome 6 Free";
           font-weight: 600;
-          margin-right: 616px;
+          margin-left: 3px;
           height: 24px;
           width: 12px;
           font-size: 1.25em;
@@ -215,7 +241,8 @@ header {
           width: 12px;
           font-size: 1.25em;
           line-height: .05em;
-          margin-left: 616px;
+
+
         }
       }
     }
@@ -223,9 +250,10 @@ header {
     .owl-dots {
       position: absolute;
       bottom: 34px;
-      left: 322px;
+      left: 25%;
 
       .owl-dot {
+
         width: 194px;
         height: 2px;
         margin-right: 34px;
@@ -233,9 +261,19 @@ header {
         border-radius: 0;
 
         &.active {
-          width: 194px;
           height: 3px;
           border: solid 1px blue;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .owl-dot {
+          width: 140px;
+        }
+      }
+      @media (max-width: 768px) {
+        .owl-dot {
+          display: none
         }
       }
     }
@@ -271,11 +309,17 @@ header {
           &.rounded {
             padding: 0 42px 0;
 
-            &.watch_indent {
-              margin-bottom: -22px;
-            }
-
+          @media (min-width:1280px) {
+          &.watch_indent {
+            margin-bottom: -22px;
           }
+
+        }
+            @media (max-width:1279px) {
+              &.watch_indent {
+                margin-bottom: 16px;
+              }
+          }}
         }
       }
     }
