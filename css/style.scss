@@ -25,8 +25,23 @@ h2 {
   font-family: $font_readex_pro;
   font-weight: 400;
   font-size: 42px;
-  line-height: 52px;
+  line-height: 125%;
   color: $main_color;
+}
+@media (max-width: 992px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  h2 {
+    font-size: 27px;
+  }
 }
 
 h3 {
@@ -35,9 +50,22 @@ h3 {
   font-size: 32px;
   line-height: 38px;
   color: $main_color;
-
 }
-
+@media (max-width: 992px) {
+  h3 {
+    font-size: 29px;
+  }
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 575px) {
+  h3 {
+    font-size: 25px;
+  }
+}
 h4 {
   font-family: $font_readex_pro;
   font-style: normal;
@@ -45,9 +73,22 @@ h4 {
   font-size: 28px;
   line-height: 35px;
   color: $main_color;
-
 }
-
+@media (max-width: 992px) {
+  h4 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 575px) {
+  h4 {
+    font-size: 21px;
+  }
+}
 h5 {
   font-family: $font_readex_pro;
   font-weight: 400;
@@ -56,6 +97,21 @@ h5 {
   color: $main_color;
 }
 
+@media (max-width: 992px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  h5 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 575px) {
+  h5 {
+    font-size: 15px;
+  }
+}
 header {
   .container {
     &-xl {
@@ -312,13 +368,18 @@ header {
           @media (min-width:1280px) {
           &.watch_indent {
             margin-bottom: -22px;
-          }
 
+          }
         }
             @media (max-width:1279px) {
               &.watch_indent {
                 margin-bottom: 16px;
+                .d-block {
+                  max-height: 270px;
+                  max-width: 381px;
+                }
               }
+
           }}
         }
       }
@@ -592,29 +653,44 @@ header {
     z-index: 0;
 
     input {
-      width: 650px;
+
+      width: 51%;
       height: 60px;
       background: #F8F9FA;
       border: 1px solid #C5C5C5;
       border-radius: 100px;
       padding-left: 67px;
 
+
       &::placeholder {
         font-family: $font_inter;
-        font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         color: $main_color;
       }
-    }
 
+      @media (max-width: 575px) {
+       input {
+          min-width: 280px; }
+        &::placeholder {
+          font-size: 12px;
+        }
+        button {
+          left: 15px;}
+      }
+    }
+    @media (max-width: 575px) {
+      input {
+        padding-left: 47px;
+      }
+    }
     button {
       position: absolute;
       z-index: 1;
       background-color: transparent;
-      top: 9px;
-      left: 325px;
+      top: 21%;
+      left: 26%;
       border: none;
 
       &:before {
