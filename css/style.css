@@ -148,13 +148,13 @@ header .container .navbar form .form-control {
 }
 
 .main_section {
-  margin-bottom: 75px;
-  margin-top: 20px;
+  margin: 20px 15px 75px;
 }
 .main_section .container {
   background-color: #DCE5E2;
   border-radius: 32px;
   padding-left: 0;
+  padding-right: 0;
 }
 .main_section .container .row .col-lg-6.align-items-center {
   align-content: center;
@@ -269,9 +269,13 @@ header .container .navbar form .form-control {
   }
 }
 
+@media (max-width: 1199px) {
+  .latest_offers {
+    margin-left: 15px;
+  }
+}
 .latest_offers {
   margin-bottom: 100px;
-  margin-left: 0;
 }
 .latest_offers .container .indent_bottom {
   margin-bottom: 55px;
@@ -300,6 +304,10 @@ header .container .navbar form .form-control {
   .latest_offers .container .col-lg-6 .shadow.bg-white.rounded.watch_indent .d-block {
     max-height: 270px;
     max-width: 381px;
+  }
+  .latest_offers .container .col-lg-6 .shadow.bg-white.rounded.laptop_img .d-block {
+    max-height: 377px;
+    max-width: 500px;
   }
 }
 .latest_offers .container .col-lg-3 {
@@ -354,7 +362,7 @@ header .container .navbar form .form-control {
   margin: 0;
 }
 .top_items .card-deck .card {
-  margin: 0 74px 0 0;
+  margin: 0 27px 0 0;
   padding: 0;
   border: none;
 }
@@ -452,9 +460,6 @@ header .container .navbar form .form-control {
 .ideas {
   margin-bottom: 75px;
 }
-.ideas .container-xl {
-  padding: 0;
-}
 .ideas .container p.text-center {
   margin-bottom: 56px;
   font-family: "Readex Pro", sans-serif;
@@ -468,13 +473,23 @@ header .container .navbar form .form-control {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 125%;
   color: #000000;
   max-width: 600px;
 }
+@media (max-width: 1100px) {
+  .ideas .container p.pb_4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .ideas .container p.pb_4 {
+    font-size: 15px;
+    padding-bottom: 6px;
+  }
+}
 .ideas .container .col-12.col-lg-6 {
   max-width: 620px;
-  margin-right: 20px;
   margin-bottom: 73px;
 }
 .ideas .container a {
