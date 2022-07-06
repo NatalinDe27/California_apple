@@ -77,8 +77,9 @@ h5 {
   font-family: "Readex Pro", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 125%;
   color: #000000;
+  padding-bottom: 19px;
 }
 
 @media (max-width: 992px) {
@@ -94,6 +95,7 @@ h5 {
 @media (max-width: 575px) {
   h5 {
     font-size: 15px;
+    padding-bottom: 0;
   }
 }
 header .container-xl {
@@ -345,12 +347,12 @@ header .container .navbar form .form-control {
 }
 
 .top_items {
-  margin-bottom: 74px;
+  margin-bottom: 50px;
 }
-.top_items .container-xl {
+.top_items .container-lg {
   padding: 0;
 }
-.top_items p.text-center {
+.top_items .container p.text-center {
   margin-bottom: 31px;
   font-family: "Readex Pro", sans-serif;
   font-weight: 400;
@@ -358,40 +360,32 @@ header .container .navbar form .form-control {
   line-height: 17px;
   color: #000000;
 }
-.top_items .card-deck {
+.top_items .container .card-deck {
   margin: 0;
 }
-.top_items .card-deck .card {
+.top_items .container .card-deck .card {
+  max-width: 303px;
   margin: 0 27px 0 0;
-  padding: 0;
   border: none;
 }
-.top_items .card-deck .card:last-of-type {
+.top_items .container .card-deck .card:last-of-type {
   margin: 0;
 }
-@media (min-width: 1200px) {
-  .top_items .card-deck .card .card-img-top {
-    margin: 28px 28px 37px 28px;
-    max-width: 247px;
-  }
+.top_items .container .card-deck .card .top_items-img {
+  max-width: 247px;
+  max-height: 214px;
 }
-@media (max-width: 1199px) {
-  .top_items .card-deck .card .card-img-top {
-    margin: 8px 9px 8px 8px;
-    max-width: 247px;
-  }
-}
-.top_items .card-deck .card .card-body {
+.top_items .container .card-deck .card .card-body {
   padding: 0;
 }
-.top_items .card-deck .card .card-body .text-muted {
+.top_items .container .card-deck .card .card-body .text-muted {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #4B4B4B;
 }
-.top_items .card-deck .card .card-body .card-text {
+.top_items .container .card-deck .card .card-body .card-text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -418,6 +412,8 @@ header .container .navbar form .form-control {
   background-color: #F8F9FA;
   border-radius: 16px;
   padding-top: 41px;
+  max-width: 413px;
+  min-width: 280px;
 }
 .best_selling .container .card-deck .card .mw_1 {
   max-width: 259px;
@@ -425,7 +421,7 @@ header .container .navbar form .form-control {
 .best_selling .container .card-deck .card .mw_2 {
   max-width: 294px;
 }
-.best_selling .container .card-deck .card .mw_2 {
+.best_selling .container .card-deck .card .mw_3 {
   max-width: 355px;
 }
 .best_selling .container .card-deck .card .card-body {
@@ -611,18 +607,32 @@ header .container .navbar form .form-control {
 .email .container form .form-group {
   max-width: 400px;
 }
+@media (max-width: 575px) {
+  .email .container form input {
+    padding-right: 0;
+  }
+  .email .container form button {
+    padding: inherit;
+  }
+  .email .container form .form-control {
+    width: inherit;
+  }
+}
+@media (min-width: 768px) {
+  .email .container form input {
+    padding-right: 80px;
+  }
+}
 .email .container form input {
   border: 1px solid #000000;
-  border-radius: 54px 0px 0px 54px;
+  border-radius: 54px 0 0 54px;
   height: 50px;
-  padding-right: 80px;
 }
 .email .container form input::placeholder {
   font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 120%;
   color: #000000;
 }
 .email .container form button {
@@ -662,9 +672,6 @@ footer .row.border_b p {
   color: #000000;
   max-width: 304px;
 }
-footer .row.border_b h5 {
-  padding-bottom: 19px;
-}
 footer .row.border_b ul {
   padding-left: 0;
 }
@@ -674,11 +681,20 @@ footer .row.border_b ul li {
 }
 footer .row.border_b ul li a {
   font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
-  line-height: 22px;
+  line-height: 127%;
   color: #000000;
+}
+@media (max-width: 767px) {
+  footer .row.border_b ul li a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575px) {
+  footer .row.border_b ul li a {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
