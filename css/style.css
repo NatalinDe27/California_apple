@@ -30,7 +30,7 @@ h3 {
   font-family: "Readex Pro", sans-serif;
   font-weight: 400;
   font-size: 32px;
-  line-height: 38px;
+  line-height: 120%;
   color: #000000;
 }
 
@@ -54,7 +54,7 @@ h4 {
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
-  line-height: 35px;
+  line-height: 125%;
   color: #000000;
 }
 
@@ -98,6 +98,13 @@ h5 {
     padding-bottom: 0;
   }
 }
+.zoom {
+  transition: 0.5s;
+}
+.zoom:hover {
+  transform: scale(1.05);
+}
+
 header .container-xl {
   padding: 0;
 }
@@ -117,13 +124,16 @@ header .container .navbar .collapse .nav-item a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 120%;
   color: #000000;
+}
+header .container .navbar .collapse .nav-item a:hover {
+  font-weight: 600;
 }
 header .container .navbar .collapse .dropdown-toggle:after {
   content: "\f107";
   color: black;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 600;
   border: none;
   vertical-align: 0;
@@ -142,7 +152,7 @@ header .container .navbar form a:after {
   content: "\f07a";
   color: black;
   font-size: 22px;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 600;
 }
 header .container .navbar form .form-control {
@@ -166,7 +176,7 @@ header .container .navbar form .form-control {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 120%;
   color: #000000;
   padding: 14px 53px;
   border: 1px solid #000000;
@@ -212,7 +222,7 @@ header .container .navbar form .form-control {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 120%;
   color: #000000;
   margin-bottom: 30px;
 }
@@ -282,13 +292,12 @@ header .container .navbar form .form-control {
 .latest_offers .container .indent_bottom {
   margin-bottom: 55px;
 }
-.latest_offers .container .indent_bottom .m-auto p {
+.latest_offers .container .indent_bottom p {
   max-width: 628px;
   font-family: "Readex Pro", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 120%;
   color: #000000;
 }
 .latest_offers .container .col-lg-6 .shadow.bg-white.rounded {
@@ -322,14 +331,14 @@ header .container .navbar form .form-control {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 19px;
+  line-height: 128%;
   color: #000000;
 }
 .latest_offers .container .row .shadow.bg-white.rounded.d-flex h3 span {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 19px;
+  line-height: 120%;
   color: #000000;
 }
 .latest_offers .container .row .shadow.bg-white.rounded .d-block.phones_img {
@@ -350,14 +359,14 @@ header .container .navbar form .form-control {
   margin-bottom: 50px;
 }
 .top_items .container-lg {
-  padding: 0;
+  padding: -15px;
 }
 .top_items .container p.text-center {
   margin-bottom: 31px;
   font-family: "Readex Pro", sans-serif;
   font-weight: 400;
   font-size: 13px;
-  line-height: 17px;
+  line-height: 129%;
   color: #000000;
 }
 .top_items .container .card-deck {
@@ -378,18 +387,19 @@ header .container .navbar form .form-control {
 .top_items .container .card-deck .card .card-body {
   padding: 0;
 }
-.top_items .container .card-deck .card .card-body .text-muted {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #4B4B4B;
+@media (max-width: 575px) {
+  .top_items .container .card-deck .card .card-body.pl_sm {
+    margin-left: -4%;
+  }
+  .top_items .container .card-deck .card .card-body .card-text {
+    font-size: 13px !important;
+  }
 }
 .top_items .container .card-deck .card .card-body .card-text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 120%;
   color: #4B4B4B;
 }
 
@@ -492,13 +502,23 @@ header .container .navbar form .form-control {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 120%;
   color: #000000;
   transition: 0.3s;
 }
 .ideas .container a:hover {
   text-decoration: none;
   font-size: 25px;
+}
+@media (max-width: 768px) {
+  .ideas .container a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .ideas .container a {
+    font-size: 17px;
+  }
 }
 
 .search {
@@ -521,7 +541,7 @@ header .container .navbar form .form-control {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 120%;
   color: #000000;
 }
 @media (max-width: 575px) {
@@ -573,7 +593,7 @@ header .container .navbar form .form-control {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 120%;
   color: #000000;
 }
 
@@ -590,10 +610,9 @@ header .container .navbar form .form-control {
 }
 .email .container p {
   font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 120%;
   color: #000000;
 }
 .email .container .size_img {
@@ -620,7 +639,7 @@ header .container .navbar form .form-control {
 }
 @media (min-width: 768px) {
   .email .container form input {
-    padding-right: 80px;
+    padding-right: 50px;
   }
 }
 .email .container form input {
@@ -637,26 +656,24 @@ header .container .navbar form .form-control {
 }
 .email .container form button {
   background-color: #000000;
-  border-radius: 0px 200px 200px 0px;
+  border-radius: 0 200px 200px 0;
   border: none;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 120%;
   color: white;
   padding: 16px 33px 17px 32px;
+}
+@media (max-width: 575px) {
+  .email .container form button {
+    padding: 6px 13px 7px 12px;
+  }
 }
 
 footer {
   padding-top: 44px;
   background-color: #F8F9FA;
-}
-footer p {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
 }
 footer .row.border_b {
   border-bottom: solid #DCE5E2 2px;
@@ -668,7 +685,7 @@ footer .row.border_b p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 120%;
   color: #000000;
   max-width: 304px;
 }
@@ -693,6 +710,11 @@ footer .row.border_b ul li a {
 }
 @media (max-width: 575px) {
   footer .row.border_b ul li a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575px) {
+  footer .row.justify-content-between p {
     font-size: 13px;
   }
 }
