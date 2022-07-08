@@ -368,8 +368,11 @@ header .container .navbar form .form-control {
 .top_items {
   margin-bottom: 50px;
 }
-.top_items .container-lg {
-  padding: -15px;
+@media (min-width: 1310px) {
+  .top_items .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .top_items .container p.text-center {
   margin-bottom: 31px;
@@ -421,8 +424,11 @@ header .container .navbar form .form-control {
 .best_selling {
   margin-bottom: 75px;
 }
-.best_selling .container-lg {
-  padding: 0;
+@media (min-width: 1310px) {
+  .best_selling .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .best_selling .container p.text-center {
   margin-bottom: 56px;
@@ -480,6 +486,12 @@ header .container .navbar form .form-control {
 
 .ideas {
   margin-bottom: 75px;
+}
+@media (min-width: 1310px) {
+  .ideas .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .ideas .container p.text-center {
   margin-bottom: 56px;
@@ -594,6 +606,7 @@ header .container .navbar form .form-control {
   font-size: 25px;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
+  color: #000000;
 }
 .search ul {
   list-style: none;
@@ -734,10 +747,20 @@ footer .row.border_b ul li a {
     font-size: 13px;
   }
 }
+@media (min-width: 1310px) {
+  footer .row .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media (max-width: 575px) {
   footer .row.justify-content-between p {
     font-size: 13px;
   }
+}
+footer .row.justify-content-between {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

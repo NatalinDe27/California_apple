@@ -203,11 +203,13 @@ header {
     }
   }
 }
+
 @media (max-width: 575px) {
   .main_section {
     margin-bottom: 50px !important;
   }
 }
+
 .main_section {
   margin: 20px 15px 75px;
 
@@ -364,11 +366,13 @@ header {
     margin-left: 15px;
   }
 }
+
 @media (max-width: 575px) {
   .latest_offers {
     margin-bottom: 50px !important;
   }
 }
+
 .latest_offers {
   margin-bottom: 100px;
 
@@ -487,12 +491,14 @@ header {
 
 .top_items {
   margin-bottom: 50px;
+  @media (min-width: 1310px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
   .container {
-    &-lg {
-      padding: -15px;
-    }
-
     p {
       &.text-center {
         margin-bottom: 31px;
@@ -544,19 +550,23 @@ header {
     }
   }
 }
+
 @media (max-width: 575px) {
   .best_selling {
     margin-bottom: 50px !important;
   }
 }
+
 .best_selling {
   margin-bottom: 75px;
+  @media (min-width: 1310px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
   .container {
-    &-lg {
-      padding: 0;
-    }
-
     p {
       &.text-center {
         margin-bottom: 56px;
@@ -631,6 +641,12 @@ header {
 
 .ideas {
   margin-bottom: 75px;
+  @media (min-width: 1310px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
   .container {
     p {
@@ -673,11 +689,12 @@ header {
         margin-bottom: 73px;
       }
     }
+
     @media (max-width: 575px) {
       .col-12 {
         &.col-lg-6 {
           max-width: 620px;
-          margin-bottom: 50px!important;
+          margin-bottom: 50px !important;
         }
       }
     }
@@ -742,6 +759,7 @@ header {
         }
         button {
           left: 15px;
+
         }
       }
     }
@@ -765,6 +783,7 @@ header {
         font-size: 25px;
         font-family: "Font Awesome 6 Free";
         font-weight: 600;
+        color: $main_color;
       }
     }
   }
@@ -889,7 +908,10 @@ header {
 footer {
   padding-top: 44px;
   background-color: #F8F9FA;
-
+  //.container {
+  //  &-lg {
+  //    padding: 0;
+  //  }}
   .row {
     &.border_b {
       border-bottom: solid #DCE5E2 2px;
@@ -938,12 +960,23 @@ footer {
       }
     }
 
+    @media (min-width: 1310px) {
+      .col-12 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
     @media (max-width: 575px) {
       &.justify-content-between {
         p {
           font-size: 13px;
         }
       }
+    }
+
+    &.justify-content-between {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 }
