@@ -159,6 +159,11 @@ header .container .navbar form .form-control {
   display: none;
 }
 
+@media (max-width: 575px) {
+  .main_section {
+    margin-bottom: 50px !important;
+  }
+}
 .main_section {
   margin: 20px 15px 75px;
 }
@@ -286,6 +291,11 @@ header .container .navbar form .form-control {
     margin-left: 15px;
   }
 }
+@media (max-width: 575px) {
+  .latest_offers {
+    margin-bottom: 50px !important;
+  }
+}
 .latest_offers {
   margin-bottom: 100px;
 }
@@ -403,6 +413,11 @@ header .container .navbar form .form-control {
   color: #4B4B4B;
 }
 
+@media (max-width: 575px) {
+  .best_selling {
+    margin-bottom: 50px !important;
+  }
+}
 .best_selling {
   margin-bottom: 75px;
 }
@@ -497,6 +512,12 @@ header .container .navbar form .form-control {
 .ideas .container .col-12.col-lg-6 {
   max-width: 620px;
   margin-bottom: 73px;
+}
+@media (max-width: 575px) {
+  .ideas .container .col-12.col-lg-6 {
+    max-width: 620px;
+    margin-bottom: 50px !important;
+  }
 }
 .ideas .container a {
   font-family: "Inter", sans-serif;

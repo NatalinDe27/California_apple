@@ -203,8 +203,11 @@ header {
     }
   }
 }
-
-
+@media (max-width: 575px) {
+  .main_section {
+    margin-bottom: 50px !important;
+  }
+}
 .main_section {
   margin: 20px 15px 75px;
 
@@ -361,7 +364,11 @@ header {
     margin-left: 15px;
   }
 }
-
+@media (max-width: 575px) {
+  .latest_offers {
+    margin-bottom: 50px !important;
+  }
+}
 .latest_offers {
   margin-bottom: 100px;
 
@@ -537,7 +544,11 @@ header {
     }
   }
 }
-
+@media (max-width: 575px) {
+  .best_selling {
+    margin-bottom: 50px !important;
+  }
+}
 .best_selling {
   margin-bottom: 75px;
 
@@ -660,6 +671,14 @@ header {
       &.col-lg-6 {
         max-width: 620px;
         margin-bottom: 73px;
+      }
+    }
+    @media (max-width: 575px) {
+      .col-12 {
+        &.col-lg-6 {
+          max-width: 620px;
+          margin-bottom: 50px!important;
+        }
       }
     }
 
