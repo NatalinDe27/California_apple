@@ -132,6 +132,7 @@ header .container .navbar .collapse .nav-item a:hover {
 }
 header .container .navbar .collapse .dropdown-toggle:after {
   content: "\f107";
+  display: inline-block;
   color: black;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
@@ -150,8 +151,9 @@ header .container .navbar form a:hover {
 }
 header .container .navbar form a:after {
   content: "\f07a";
+  display: inline-block;
   color: black;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
 }
@@ -242,6 +244,7 @@ header .container .navbar form .form-control {
 }
 .main_section .owl-carousel .owl-nav .owl-prev:before {
   content: "\f104";
+  display: inline-block;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
   margin-left: 3px;
@@ -252,6 +255,7 @@ header .container .navbar form .form-control {
 }
 .main_section .owl-carousel .owl-nav .owl-next:before {
   content: "\f105";
+  display: inline-block;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
   height: 24px;
@@ -609,6 +613,7 @@ header .container .navbar form .form-control {
 }
 .search form button:before {
   content: "\f002";
+  display: inline-block;
   font-size: 25px;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
